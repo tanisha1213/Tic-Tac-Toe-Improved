@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Tic Tac Toe</title>
+  <link rel="stylesheet" href="board.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo"/>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="title">Tic Tac Toe Online</h1>
+    <p id="status">Loading room...</p>
+
+    <div id="board" class="board"></div>
+
+    <div class="controls">
+      <button id="resetBtn">Reset</button>
+      <button id="exitBtn">Exit</button>
+    </div>
+  </div>
+
+<audio id="clickSound" src="../music/click2.wav" preload="auto"></audio>
+<audio id="victorySound" src="../music/victory.wav" preload="auto"></audio>
+<audio id="gameOverSound" src="../music/gameover.wav" preload="auto"></audio>
+
+
+  <script type="module" src="board.js"></script>
+</body>
+</html>

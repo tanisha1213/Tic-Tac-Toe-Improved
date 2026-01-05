@@ -1,0 +1,16 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Orbitron',sans-serif; background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("../images/bg.png") no-repeat center/cover; color:#fff; min-height:100vh; overflow-x:hidden; }
+.navbar { position:absolute; top:0; width:100%; padding:1rem 2rem; display:flex; align-items:center; }
+.logo img { height:100px; width:auto; }
+.container { text-align:center; padding-top:150px; }
+.title { font-size:3rem; margin-bottom:30px; color:#00f0ff; text-shadow:0 0 10px #00f0ff; }
+.cards { display:flex; justify-content:center; flex-wrap:wrap; gap:40px; }
+.card { background: rgba(255,255,255,0.05); border:2px solid #00f0ff; border-radius:20px; padding:30px 20px; width:240px; backdrop-filter:blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow:0 0 10px #00f0ff33; }
+.card:hover { transform: translateY(-10px); box-shadow:0 0 25px #00f0ff; }
+.card h1{ font-size:1.5rem; margin-bottom:10px; }
+.card a, .card input, .card select { display:inline-block; padding:10px 20px; border-radius:8px; font-weight:bold; font-size:1rem; text-decoration:none; color:black; background:#00f0ff; border:none; cursor:pointer; transition:0.3s ease; }
+.card a:hover { background:black; color:#00f0ff; border:1px solid #00f0ff; }
+input, select { width:100%; text-align:center; margin-bottom:10px; }
+#startGameBtn { display:none; padding:10px 20px; border-radius:8px; background:#FFB400; color:black; font-weight:bold; cursor:pointer; margin-top:20px; }
+#startGameBtn:hover { background:black; color:#FFB400; border:1px solid #FFB400; }
+#gameCodeDisplay { margin-top:10px; font-weight:bold; color:#00f0ff; }

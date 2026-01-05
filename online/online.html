@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Lobby</title>
+  <link rel="stylesheet" href="online.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo">
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="title">Online Lobby</h1>
+
+    <div class="cards">
+      <!-- CREATE ROOM -->
+      <div class="card">
+        <h1>Create Room</h1>
+        <select id="mode">
+          <option value="2">2 Players</option>
+          <option value="3">3 Players</option>
+          <option value="4">4 Players</option>
+        </select>
+        <br><br>
+        <a href="#" id="createGame">Create Room</a>
+        <p id="gameCodeDisplay"></p>
+      </div>
+
+      <!-- JOIN ROOM -->
+      <div class="card">
+        <h1>Join Room</h1>
+        <input type="text" id="gameCode" maxlength="5" placeholder="Enter Code"/>
+        <br><br>
+        <a href="#" id="joinGame">Join Room</a>
+      </div>
+    </div>
+
+    <a href="#" id="startGameBtn">Start Game</a>
+  </div>
+
+  <script type="module" src="online.js"></script>
+</body>
+</html>
